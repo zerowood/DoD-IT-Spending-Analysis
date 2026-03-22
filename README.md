@@ -1,19 +1,19 @@
-﻿# DoD IT Spending Analysis (FY2024-2025)
+﻿# Department of Defense IT Spending Analysis (FY2024-2025)
 
-## 📊 Overview
-This project provides a programmatic analysis of Information Technology (IT) spending across Department of Defense (DoD) sub-agencies. Using the USAspending.gov API, the pipeline extracts contract obligations and categorizes them into Development/Modernization (DME) and Operations/Maintenance (O&M) portfolios.
+## Project Overview
+This repository contains a programmatic analysis of Information Technology (IT) contract obligations across Department of Defense (DoD) sub-agencies. Using the USAspending.gov API, the pipeline extracts financial data and categorizes investments into Development, Modernization, and Enhancement (DME) versus Operations and Maintenance (O&M) portfolios.
 
-### Key Insights
-* **Scale:** Analyzed over **$41.9 Billion** in IT contract obligations.
-* **Categorization:** Implemented a statistical median-split to identify investment intensity.
-* **Visualization:** Created an interactive D3-based Treemap for hierarchical budget exploration.
+## Key Technical Insights
+* Data Scale: Analyzed over $41.9 Billion in federal IT contract obligations.
+* Methodology: Implemented statistical median-split logic to identify agency-level investment intensity.
+* Visualization: Developed hierarchical budget exploration tools using D3.js-based Treemaps.
 
-## 🛠️ Technical Implementation
-* **Language:** Python (Pandas, Plotly, Requests)
-* **Automation:** End-to-end pipeline from API ingestion to data visualization.
-* **Governance:** Automated data audit trails with timestamped CSV exports.
+## Technical Stack
+* Language: Python (Pandas, Plotly, Requests)
+* Pipeline: End-to-end automation from API ingestion to interactive HTML reporting.
+* Governance: Automated data audit trails and standardized version control protocols.
 
-## 📂 Structure
-* `federal_agencies_spend_treemap.ipynb`: Core analysis and data processing.
-* `it_spending_analysis_outputs/`: Processed data and interactive HTML report.
-* `.gitignore`: Automated governance to exclude audit logs from version control.
+## Directory Structure
+* federal_agencies_spend_treemap.ipynb: Primary analysis and data processing logic.
+* it_spending_analysis_outputs/: Processed data exports and visualization assets.
+* .gitignore: Configured to exclude local audit logs and temporary data files.
