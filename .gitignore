@@ -1,0 +1,12 @@
+﻿# Python / Jupyter junk
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Local Environment
+.env
+.venv/
+env/
+
+# Audit files (Keep the main data, ignore the timestamped duplicates)
+it_spending_analysis_outputs/dod_it_audit_*.csv
